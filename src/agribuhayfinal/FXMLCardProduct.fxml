@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cardForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="127.0" prefWidth="149.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agribuhayfinal.FXMLCardProductController">
+   <children>
+      <Spinner fx:id="prod_spinner" editable="true" layoutX="5.0" layoutY="89.0" prefHeight="32.0" prefWidth="76.0" />
+      <Button fx:id="prod_addBtn" layoutX="86.0" layoutY="89.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" style="-fx-background-color: #4d9168;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="6.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <VBox prefHeight="88.0" prefWidth="149.0">
+         <children>
+            <Label fx:id="prod_name" alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="139.0" style="-fx-background-color: #dff0d8;" text="Mango">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="29.0" prefWidth="133.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="36.0" text="Php">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="prod_price" prefHeight="27.0" prefWidth="70.0" text="100.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="27.0" text="/kg">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="6.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

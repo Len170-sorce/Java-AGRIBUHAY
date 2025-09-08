@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="menuPane" prefHeight="669.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agribuhayfinal.FXMLMenuController">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="-1.0" layoutY="94.0" prefHeight="598.0" prefWidth="1136.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="215.0" style="-fx-background-color: #4d9168;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleButton1Action" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #2c6e49;" text="Home" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AirbnbCerealWBd" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="27.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleButton2Action" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #2c6e49;" text="Dashboard" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AirbnbCerealWBd" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="27.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleButton3Action" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #2c6e49;" text="Inventory" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AirbnbCerealWBd" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="27.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleButton4Action" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #2c6e49;" text="Customer Order" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AirbnbCerealWBd" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="27.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleButton5Action" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #2c6e49;" text="Customer" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AirbnbCerealWBd" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="27.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleButton5Action" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #2c6e49;" text="Logout" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="17.0" top="180.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="AirbnbCerealWBd" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+      <HBox layoutY="-1.0" prefHeight="95.0" prefWidth="1136.0" style="-fx-background-color: #2c6e49;">
+         <children>
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="192.0" text="AgriBuhay:" textFill="WHITE">
+               <font>
+                  <Font name="AirbnbCerealWXBd" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="17.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="735.0" text="Agricultural Inventory &amp; Expense Tracker With Billing System Management" textFill="WHITE">
+               <font>
+                  <Font name="AirbnbCerealWXBd" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="17.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

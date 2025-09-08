@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agribuhayfinal.FXMLAddProductsController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="486.0" prefWidth="755.0" style="-fx-background-color: #d8f3dc;">
+         <children>
+            <Label layoutX="30.0" prefHeight="59.0" prefWidth="217.0" text="Add New Product" textFill="#4d9168">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox layoutX="30.0" layoutY="59.0" prefHeight="339.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="310.0" text="Product ID:" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="add_productID" disable="true" editable="false" prefHeight="35.0" prefWidth="294.0" />
+                  <Label prefHeight="50.0" prefWidth="314.0" text="Product Name:" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="add_productName" prefHeight="35.0" prefWidth="294.0" />
+                  <Label prefHeight="50.0" prefWidth="313.0" text="Category:" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="add_category" prefHeight="35.0" prefWidth="305.0" promptText="Select Category" style="-fx-background-color: #FFFFFF;" />
+                  <Label prefHeight="50.0" prefWidth="308.0" text="Status:" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="add_status" prefHeight="35.0" prefWidth="305.0" promptText="Select Status" style="-fx-background-color: #FFFFFF;" />
+               </children>
+            </VBox>
+            <VBox layoutX="385.0" layoutY="59.0" prefHeight="339.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="311.0" text="Current Stock (in kg):" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="add_stock" editable="true" prefHeight="35.0" prefWidth="314.0" />
+                  <Label prefHeight="50.0" prefWidth="308.0" text="Total Production Cost (Php):" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="add_ProdCost" prefHeight="35.0" prefWidth="314.0" />
+                  <RadioButton fx:id="radio_tsp" mnemonicParsing="false" prefHeight="50.0" prefWidth="308.0" text="Total Selling Prince" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+                  <Spinner fx:id="add_TotSP" editable="true" prefHeight="35.0" prefWidth="314.0" />
+                  <RadioButton fx:id="radio_pkg" mnemonicParsing="false" prefHeight="50.0" prefWidth="308.0" text="Price (Php) per kg" textFill="#4d9168">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+                  <Spinner fx:id="add_price" editable="true" prefHeight="35.0" prefWidth="314.0" />
+               </children>
+            </VBox>
+            <HBox layoutX="385.0" layoutY="410.0" prefHeight="51.0" prefWidth="300.0" spacing="19.0">
+               <children>
+                  <Button fx:id="addCancelBtn" mnemonicParsing="false" onAction="#handleAddCancel" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #FFFFFF;" text="Cancel">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addProductbtn" mnemonicParsing="false" onAction="#inventoryAddBtn" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #2c6e49;" text="Add Product" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
